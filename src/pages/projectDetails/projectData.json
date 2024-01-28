@@ -2,7 +2,7 @@
   "qtrip": {
     "projectMetaData": {
       "projectId": "qtirp",
-      "mockupImg": "/public/assets/images/trip.png",
+      "mockupImg": "/assets/images/trip.png",
       "webColor": "bg-[#7F3E0A]/20",
       "name": "QTrip",
       "projectTime": "Aug, 2023",
@@ -28,11 +28,11 @@
         ],
         "img": [
           {
-            "imgURL": "/public/assets/images/qtrip/flow.png",
+            "imgURL": "/assets/images/qtrip/flow.png",
             "imgDisc": "QTrip Architecture Diagram"
           },
           {
-            "imgURL": "/public/assets/images/qtrip/qtrip-ladingPage.png",
+            "imgURL": "/assets/images/qtrip/qtrip-ladingPage.png",
             "imgDisc": "QTrip Landing Page Interface "
           }
         ]
@@ -48,7 +48,7 @@
           "skills": "HTML, CSS, JS, Bootstrap, REST APIs, JSON, DOM Manipulation, cURL",
           "img": [
             {
-              "imgURL": "/public/assets/images/qtrip/cities.png",
+              "imgURL": "/assets/images/qtrip/cities.png",
               "imgDisc": "Dynamically rendered cities"
             },
             {
@@ -69,11 +69,11 @@
           "skills": "JS, Bootstrap Flex, Bootstrap Spacing, ES6, localStorage",
           "img": [
             {
-              "imgURL": "/public/assets/images/qtrip/adventurePage.png",
+              "imgURL": "/assets/images/qtrip/adventurePage.png",
               "imgDisc": "QTrip Adventures page"
             },
             {
-              "imgURL": "/public/assets/images/qtrip/category-feature.png",
+              "imgURL": "/assets/images/qtrip/category-feature.png",
               "imgDisc": "Multi-select Filter"
             }
           ]
@@ -89,11 +89,11 @@
           "skills": "JS, Bootstrap, Conditional rendering, Bootstrap Carousel",
           "img": [
             {
-              "imgURL": "/public/assets/images/qtrip/adventure-details.png",
+              "imgURL": "/assets/images/qtrip/adventure-details.png",
               "imgDisc": "QTrip Adventure Details"
             },
             {
-              "imgURL": "/public/assets/images/qtrip/carousel.png",
+              "imgURL": "/assets/images/qtrip/carousel.png",
               "imgDisc": "Image carousel on the Adventures page"
             }
           ]
@@ -107,7 +107,7 @@
           "skills": "JS, Conditional rendering",
           "img": [
             {
-              "imgURL": "/public/assets/images/qtrip/reservation.png",
+              "imgURL": "/assets/images/qtrip/reservation.png",
               "imgDisc": "QTrip Reservations page"
             },
             {
@@ -142,7 +142,7 @@
   "qkart": {
     "projectMetaData": {
       "projectId": "qkart",
-      "mockupImg": "/public/assets/images/kart.png",
+      "mockupImg": "/assets/images/kart.png",
       "webColor": "bg-[#8FE070]/25",
       "name": "QKart",
       "projectTime": "Sep, 2023",
@@ -167,11 +167,11 @@
         ],
         "img": [
           {
-            "imgURL": "/public/assets/images/qkart/qkartArch.png",
+            "imgURL": "/assets/images/qkart/qkartArch.png",
             "imgDisc": "QKart Component Architecture"
           },
           {
-            "imgURL": "/public/assets/images/qkart/qkart-landingPage.png",
+            "imgURL": "/assets/images/qkart/qkart-landingPage.png",
             "imgDisc": "QKart Shopping Interface (Products page)"
           }
         ]
@@ -187,11 +187,11 @@
           "skills": "React.js, Event Handling, Forms, React Hooks, REST API, Error Handling",
           "img": [
             {
-              "imgURL": "/public/assets/images/qkart/registrationPage.png",
+              "imgURL": "/assets/images/qkart/registrationPage.png",
               "imgDisc": "Registration Page Interface"
             },
             {
-              "imgURL": "/public/assets/images/qkart/loginpage-with-error.png",
+              "imgURL": "/assets/images/qkart/loginpage-with-error.png",
               "imgDisc": "Login Page with error message (for wrong credentials)"
             }
           ]
@@ -207,11 +207,11 @@
           "skills": "React Router, Material UI, localStorage, Controlled Components, Conditional Rendering",
           "img": [
             {
-              "imgURL": "/public/assets/images/qkart/request-login.png",
+              "imgURL": "/assets/images/qkart/request-login.png",
               "imgDisc": "Request-response cycle for QKart User signup and login"
             },
             {
-              "imgURL": "/public/assets/images/qkart/login-flow.png",
+              "imgURL": "/assets/images/qkart/login-flow.png",
               "imgDisc": "User flow on website for signup and login"
             }
           ]
@@ -227,11 +227,11 @@
           "skills": "Responsive Design, Reusable Components, HTTP Request, Conditional Rendering",
           "img": [
             {
-              "imgURL": "/public/assets/images/qkart/kart.png",
+              "imgURL": "/assets/images/qkart/kart.png",
               "imgDisc": "Products page UI with responsive Cart design (Left: Desktop, Right: Mobile)"
             },
             {
-              "imgURL": "/public/assets/images/qkart/checkout.png",
+              "imgURL": "/assets/images/qkart/checkout.png",
               "imgDisc": "QKart Checkout page"
             }
           ]
@@ -246,11 +246,11 @@
           "skills": "Keyword Search, Debouncing, React Hooks, Material UI Grid",
           "img": [
             {
-              "imgURL": "/public/assets/images/qkart/search-products.png",
+              "imgURL": "/assets/images/qkart/search-products.png",
               "imgDisc": "QKart Products page with search functionality resulting in leather products for searching 'leather'"
             },
             {
-              "imgURL": "/public/assets/images/qkart/empty-search.png",
+              "imgURL": "/assets/images/qkart/empty-search.png",
               "imgDisc": "Product not found result for 'abc'"
             }
           ]
@@ -280,7 +280,7 @@
   "4uacademy": {
     "projectMetaData": {
       "projectId": "4uacademy",
-      "mockupImg": "./../../../public/assets/images/academy.png",
+      "mockupImg": "./../../../assets/images/academy.png",
       "webColor": "bg-[#f0f8ff]",
       "name": "4U Academy",
       "projectTime": "Oct, 2023",
@@ -304,11 +304,11 @@
         ],
         "img": [
           {
-            "imgURL": "./../../../public/assets/images/4uacademy/4u-landingPage.png",
+            "imgURL": "./../../../assets/images/4uacademy/4u-landingPage.png",
             "imgDisc": "4U Academy Interface (Landing page)"
           },
           {
-            "imgURL": "./../../../public/assets/images/4uacademy/courseCards.png",
+            "imgURL": "./../../../assets/images/4uacademy/courseCards.png",
             "imgDisc": "Course Cards section on landing page"
           }
         ]
@@ -324,7 +324,7 @@
           "skills": "React-responsive-carousel, JSON, React.js",
           "img": [
             {
-              "imgURL": "./../../../public/assets/images/4uacademy/carousel.png",
+              "imgURL": "./../../../assets/images/4uacademy/carousel.png",
               "imgDisc": "Student Reviews Carousel"
             },
             {
@@ -344,11 +344,11 @@
           "skills": "Reusable Components, JSON, Responsive Design",
           "img": [
             {
-              "imgURL": "./../../../public/assets/images/4uacademy/placementPage.png",
+              "imgURL": "./../../../assets/images/4uacademy/placementPage.png",
               "imgDisc": "Placement Page"
             },
             {
-              "imgURL": "./../../../public/assets/images/4uacademy/placementCards.png",
+              "imgURL": "./../../../assets/images/4uacademy/placementCards.png",
               "imgDisc": "Placement Cards"
             }
           ]
@@ -364,11 +364,11 @@
           "skills": "Media queries, Tailwind CSS",
           "img": [
             {
-              "imgURL": "./../../../public/assets/images/4uacademy/responsive-landingPage.png",
+              "imgURL": "./../../../assets/images/4uacademy/responsive-landingPage.png",
               "imgDisc": "Responsive Landing Page"
             },
             {
-              "imgURL": "./../../../public/assets/images/4uacademy/response-placementPage.png",
+              "imgURL": "./../../../assets/images/4uacademy/response-placementPage.png",
               "imgDisc": "Responsive Placement Cards"
             }
           ]
@@ -398,7 +398,7 @@
   "kdevents": {
     "projectMetaData": {
       "projectId": "kdevents",
-      "mockupImg": "./../../../public/assets/images/kd.png",
+      "mockupImg": "./../../../assets/images/kd.png",
       "webColor": "bg-[#F5F8FD]",
       "name": "SLA Finance | KD Events",
       "projectTime": "Nov, 2023",
@@ -423,7 +423,7 @@
         ],
         "img": [
           {
-            "imgURL": "./../../../public/assets/images/kdevents/kdevent-landingPage.png",
+            "imgURL": "./../../../assets/images/kdevents/kdevent-landingPage.png",
             "imgDisc": "KD Events Landing Page"
           },
           {
@@ -443,11 +443,11 @@
           "skills": "React.js, React Hooks, Material UI, Responsive Design",
           "img": [
             {
-              "imgURL": "./../../../public/assets/images/kdevents/services.png",
+              "imgURL": "./../../../assets/images/kdevents/services.png",
               "imgDisc": "Services section"
             },
             {
-              "imgURL": "./../../../public/assets/images/kdevents/team.png",
+              "imgURL": "./../../../assets/images/kdevents/team.png",
               "imgDisc": "Team section"
             }
           ]
@@ -463,7 +463,7 @@
           "skills": "EamilJS, Forms, Event Handling, Input validation",
           "img": [
             {
-              "imgURL": "./../../../public/assets/images/kdevents/contact.png",
+              "imgURL": "./../../../assets/images/kdevents/contact.png",
               "imgDisc": "Contact Us section using EmailJS"
             },
             {
@@ -483,11 +483,11 @@
           "skills": "Media queries, Bootstrap, Flexbox, CSS Gird",
           "img": [
             {
-              "imgURL": "./../../../public/assets/images/kdevents/res-hero.png",
+              "imgURL": "./../../../assets/images/kdevents/res-hero.png",
               "imgDisc": "Responsive Hero & Services Section"
             },
             {
-              "imgURL": "./../../../public/assets/images/kdevents/res-team.png",
+              "imgURL": "./../../../assets/images/kdevents/res-team.png",
               "imgDisc": "Responsive Team & Contact Section"
             }
           ]
