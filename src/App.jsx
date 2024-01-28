@@ -4,7 +4,7 @@ import Project from "./pages/home/section/Project";
 import Skills from "./pages/home/section/Skills";
 import Experience from "./pages/home/section/Experience";
 import Contact from "./pages/home/section/Contact";
-import "./app.css";
+// import "./app.css";
 import Header from "./components/Header";
 import Footer from "./pages/home/section/Footer";
 import { useLocation } from "react-router-dom";
