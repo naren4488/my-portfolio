@@ -14,7 +14,7 @@ const Contact = () => {
         "service_0dw3wuo",
         "template_ri52myb",
         form.current,
-        "txFZvSHNC9PS5FHsF"
+        "txFZvSHNC9PS5FHsF",
       )
       .then(
         (result) => {
@@ -25,26 +25,26 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   };
   return (
-    <div id="contact" className="px-28 py-6 pb-32 bg-[#131417] text-white">
-      <h1 className="text-4xl mb-10 mt-16">{`Let's Connect`}</h1>
+    <div id="contact" className="bg-[#131417] px-28 py-6 pb-32 text-white">
+      <h1 className="mb-10 mt-16 text-4xl">{`Let's Connect`}</h1>
       {/* email form div */}
 
       <div className="flex-1">
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex gap-10  justify-between items-end"
+          className="flex items-end  justify-between gap-10"
         >
           <div className="flex flex-col ">
             <label id="inputName" className="mb-1" htmlFor="userName">
               Name
             </label>
             <input
-              className="mb-3 p-1 border-b border-white bg-inherit outline-none	"
+              className="mb-3 border-b border-white bg-inherit p-1 outline-none	"
               type="text"
               name="user_name"
               id="userName"
@@ -57,7 +57,7 @@ const Contact = () => {
               Email
             </label>
             <input
-              className="mb-3 p-1 border-b border-white bg-inherit outline-none	"
+              className="mb-3 border-b border-white bg-inherit p-1 outline-none	"
               type="email"
               name="user_email"
               id="emailAddress"
@@ -65,12 +65,12 @@ const Contact = () => {
               placeholder="Enter your email"
             />
           </div>
-          <div className="flex flex-col w-1/3">
+          <div className="flex w-1/3 flex-col">
             <label id="inputMsg" htmlFor="messageBox" className="mb-1 p-1">
               Message
             </label>
             <textarea
-              className="mb-3 pb-1 border-b border-white bg-inherit outline-none	"
+              className="mb-3 border-b border-white bg-inherit pb-1 outline-none	"
               name="message"
               id="messageBox"
               required
@@ -83,7 +83,7 @@ const Contact = () => {
           <button
             type="submit"
             required
-            className="bg-white text-black px-4 py-2 m-3 flex items-center gap-4 shrink-0"
+            className="m-3 flex shrink-0 items-center gap-4 bg-white px-4 py-2 text-black"
           >
             <div>Send Message</div>
             <div>

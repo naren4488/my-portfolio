@@ -2,8 +2,6 @@ import projectDataJSON from "./../../../pages/projectDetails/projectData.json";
 import ProjectCard from "./../../../components/ProjectCard";
 
 const Project = () => {
-  // array pending of objects including info of name, Project page URL from name, color, btn color
-
   const projects = [
     { websiteName: "qkart", color: "bg-[#8FE070]/25" },
     { websiteName: "qtrip", color: "bg-[#7F3E0A]/20" },
@@ -13,7 +11,7 @@ const Project = () => {
 
   return (
     <div id="work" className=" px-28  pt-24">
-      <h1 className="text-4xl pb-12 flex items-center justify-between">
+      <h1 className="flex items-center justify-between pb-12 text-4xl">
         <div>My Work</div>
         <div className="text-lg">Hands-on Experience</div>
       </h1>

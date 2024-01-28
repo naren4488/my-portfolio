@@ -1,10 +1,9 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
-// eslint-disable-next-line react/prop-types
 const ProjectCard = ({ projectMetaData, reverse, projectpath }) => {
   const {
     name,
-    discription,
     techStack,
     site,
     github,
@@ -17,14 +16,13 @@ const ProjectCard = ({ projectMetaData, reverse, projectpath }) => {
   return (
     <div>
       <div
-        className={`flex justify-between group ${webColor} mb-20 ${
+        className={`group mb-20 flex justify-between border border-gray-400 ${
           reverse && "flex-row-reverse"
         }`}
       >
-        <div className=" p-8 relative flex-1">
-          <div className="flex justify-between items-baseline gap-4 pb-6">
+        <div className=" relative flex-1 p-8">
+          <div className="flex items-baseline justify-between gap-4 pb-6">
             <h1 className="text-3xl ">{name} </h1>
-            {/* <div className="pl-3 ">{projectTime}</div> */}
           </div>
           <p className="pb-2 text-justify">{projectInfo}</p>
           <p className="pb-4 text-justify">{secondProjectInfo}</p>
@@ -35,7 +33,7 @@ const ProjectCard = ({ projectMetaData, reverse, projectpath }) => {
               </p>
             ))}
           </div>
-          <div className="flex  justify-between items-baseline  mt-10 absolute bottom-8 left-0 right-0 px-8">
+          <div className="absolute  bottom-8 left-0  right-0 mt-10 flex items-baseline justify-between px-8">
             <div className="flex gap-8">
               <p className=" border-b-2 border-black">View Site</p>
               <p className=" border-b-2 border-black">GitHub Repo</p>
@@ -51,7 +49,7 @@ const ProjectCard = ({ projectMetaData, reverse, projectpath }) => {
         {/* image column */}
         <div className="">
           <div className="p-8">
-            <div className="w-[500px] h-[400px] ">
+            <div className="h-[400px] w-[500px] ">
               <img
                 src={mockupImg}
                 alt=""

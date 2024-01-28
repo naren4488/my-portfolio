@@ -1,34 +1,29 @@
 /* eslint-disable react/prop-types */
-// eslint-disable-next-line react/prop-types
 const ProjectDetailsCard = ({ feature, idIndex }) => {
-  // console.log(feature['heading'])
-  // console.log(feature['heading'])
-  console.log(idIndex);
   return (
-    <div id={idIndex} className={`p-6 bg-white  shadow-md mt-6 relative`}>
-      <h1 className="text-2xl mb-6 font-normal">{feature["heading"]}</h1>
-      {/* <p>{idIndex}</p> */}
-      <h3 className="text-xl mb-4 font-normal">Scope of work</h3>
-      <ul className=" list-disc pl-16 mb-4">
+    <div id={idIndex} className={`relative mt-6  bg-white p-6 `}>
+      <h1 className="mb-6 text-2xl font-normal">{feature["heading"]}</h1>
+      <h3 className="mb-1 text-xl text-gray-600">Scope of work</h3>
+      <ul className=" mb-4 list-disc pl-16">
         {feature["scope of work items"].map((data, idx) => {
           if (data) return <li key={idx}>{data}</li>;
         })}
       </ul>
-      <h3 className="text-xl mb-4 font-normal">Skills used</h3>
+      <h3 className="mb-1 text-xl text-gray-600">Skills used</h3>
       <p className="mb-4">{feature["skills"]}</p>
 
       {feature["img"][0].imgDisc && (
-        <h3 className="text-xl mb-4 font-normal">Images</h3>
+        <h3 className="mb-4 text-xl text-gray-600">Images</h3>
       )}
       <div className="flex gap-10">
         {feature["img"].map((obj, idx) => {
           if (obj.imgURL)
             return (
-              <div key={idx} className="border border-black w-1/2">
+              <div key={idx} className="w-1/2 ">
                 <img
                   src={obj.imgURL}
                   alt={obj.imgDisc}
-                  className="shadow-lg ring-1 mb-4 ring-slate-200  h-[290px] object-contain "
+                  className="mb-4 h-[290px] object-contain shadow-lg  ring-1 ring-slate-200 "
                 />
                 <p className="text-center">{obj.imgDisc}</p>
               </div>
@@ -36,7 +31,7 @@ const ProjectDetailsCard = ({ feature, idIndex }) => {
         })}
       </div>
       {feature["heading"] === "Deployment" && (
-        <div className="flex gap-8 mt-10">
+        <div className="mt-10 flex gap-8">
           <p className=" border-b-2 border-black">View Site</p>
           <p className=" border-b-2 border-black">GitHub Repo</p>
         </div>

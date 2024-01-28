@@ -2,11 +2,11 @@ import Accordion from "../../../components/Accordion";
 
 const Experience = () => {
   return (
-    <div className="h-fit w-full py-10 px-28 bg-[#131417] text-white">
-      <h1 className="text-4xl my-10">My Experience</h1>
+    <div className="h-fit w-full bg-[#131417] px-28 py-10 text-white">
+      <h1 className="my-10 text-4xl">My Experience</h1>
       {/* accordion box */}
       <div className="px-24">
-        <div className="p-4 w-full    m-auto">
+        <div className="m-auto w-full    p-4">
           <Accordion
             id="1"
             title="4U Academy"

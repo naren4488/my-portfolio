@@ -2,7 +2,7 @@
 
 const EmbedVideo = ({ videoID }) => {
   return (
-    <div className="h-[250px] w-full border-2 p-2 mb-3">
+    <div className="mb-3 h-[250px] w-full border-2 p-2">
       <iframe
         src={`https://www.youtube.com/embed/${videoID}`}
         className="h-full w-full"

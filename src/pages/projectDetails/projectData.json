@@ -7,7 +7,7 @@
       "name": "QTrip",
       "projectTime": "Aug, 2023",
       "discription": "This project is a part of Crio Fellowship Program in Software Development aimed towards enabling the graduatee to become a skilled & certified full stack engineer. ",
-      "secondDiscription":"Qtrip is 2nd out of 3 capstone projects assigned from 'Crio' in order to receive certification in 'Fellowship Program in Software Development'.",
+      "secondDiscription": "Qtrip is 2nd out of 3 capstone projects assigned from 'Crio' in order to receive certification in 'Fellowship Program in Software Development'.",
       "techStack": ["HTML", "CSS", "JavaScript", "REST APIs"],
       "site": "sitURL",
       "github": "gitURL",
@@ -57,7 +57,7 @@
             }
           ]
         },
-        
+
         {
           "heading": "Adventures page with multi-select filters",
           "scope of work items": [
@@ -116,7 +116,7 @@
             }
           ]
         },
-        
+
         {
           "heading": "Deployment",
           "scope of work items": [
@@ -147,7 +147,7 @@
       "name": "QKart",
       "projectTime": "Sep, 2023",
       "discription": "This project is a part of Crio Fellowship Program in Software Development aimed towards enabling the graduatee to become a skilled & certified full stack engineer.",
-      "secondDiscription":"Qkart is 1st out of 3 capstone projects assigned from 'Crio' in order to receive certification in 'Fellowship Program in Software Development'.",
+      "secondDiscription": "Qkart is 1st out of 3 capstone projects assigned from 'Crio' in order to receive certification in 'Fellowship Program in Software Development'.",
       "techStack": ["React", "Material UI", "HTTP", "REST APIs", "Git"],
       "site": "sitURL",
       "github": "gitURL",
@@ -403,7 +403,7 @@
       "name": "SLA Finance | KD Events",
       "projectTime": "Nov, 2023",
       "discription": "SLA Finance | With 8000+ clients across boundaries, SLA has been awarded as the Best Financial Advisor (North India) for F.Y. 2013 - 14 by CNBC and by Wealth Forum for F.Y. 2010 - 11 and F.Y. 2013 - 14. ",
-      "secondDiscription" : "KD Events is a premier event management company working under SLA",
+      "secondDiscription": "KD Events is a premier event management company working under SLA",
       "techStack": ["React", "Bootstrap", "EmailJS", "Material UI"],
       "site": "sitURL",
       "github": "gitURL",
