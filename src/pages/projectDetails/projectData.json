@@ -1,0 +1,516 @@
+{
+  "qtrip": {
+    "projectMetaData": {
+      "projectId": "qtirp",
+      "mockupImg": "/public/assets/images/trip.png",
+      "webColor": "bg-[#7F3E0A]/20",
+      "name": "QTrip",
+      "projectTime": "Aug, 2023",
+      "discription": "This project is a part of Crio Fellowship Program in Software Development aimed towards enabling the graduatee to become a skilled & certified full stack engineer. ",
+      "secondDiscription":"Qtrip is 2nd out of 3 capstone projects assigned from 'Crio' in order to receive certification in 'Fellowship Program in Software Development'.",
+      "techStack": ["HTML", "CSS", "JavaScript", "REST APIs"],
+      "site": "sitURL",
+      "github": "gitURL",
+      "videoDemo": "videoURL",
+      "projectInfo": "As a learner in Crio, I used JavaScript to convert HTML & CSS pages into dynamic pages. And thus enabling to have numerous filters to sort trip destinations.",
+      "secondProjectInfo": "QTrip is a travel website aimed at travellers looking for a multitude of adventures in different cities."
+    },
+    "projectData": {
+      "Overview": {
+        "subHeading": "QTrip is a travel website aimed at travellers looking for a multitude of adventures in different cities. ",
+        "list": "During the course of this project, I have",
+        "listItems": [
+          "Created web pages using HTML and CSS and made them dynamic using JavaScript",
+          "Improved UX with multi-select filters, image carousels",
+          "Implemented conditional rendering of page elements",
+          "Utilized localStorage to persist user preferences at client-side and facilitated reservation form submission using fetch API",
+          "Deployed the website using Netlify for Frontend and Render for Backend"
+        ],
+        "img": [
+          {
+            "imgURL": "/public/assets/images/qtrip/flow.png",
+            "imgDisc": "QTrip Architecture Diagram"
+          },
+          {
+            "imgURL": "/public/assets/images/qtrip/qtrip-ladingPage.png",
+            "imgDisc": "QTrip Landing Page Interface "
+          }
+        ]
+      },
+      "features": [
+        {
+          "heading": "Dynamically render landing page",
+          "scope of work items": [
+            "Retrieved cities data from the backend REST API endpoint using Javascript’s Fetch API",
+            "Created HTML for the cities grid with Bootstrap class to add responsiveness",
+            "Implemented logic to dynamically plug in city data to the Landing page’s DOM"
+          ],
+          "skills": "HTML, CSS, JS, Bootstrap, REST APIs, JSON, DOM Manipulation, cURL",
+          "img": [
+            {
+              "imgURL": "/public/assets/images/qtrip/cities.png",
+              "imgDisc": "Dynamically rendered cities"
+            },
+            {
+              "imgURL": "",
+              "imgDisc": ""
+            }
+          ]
+        },
+        
+        {
+          "heading": "Adventures page with multi-select filters",
+          "scope of work items": [
+            "Fetched adventures data for the city by invoking the backend API from the page URL’s query parameter",
+            "Inserted HTML populated with API response data to the adventure page’s DOM",
+            "Implemented logic to add both multi-select and single-select filters",
+            "Added logic to persist the filters selected by the user in the browser’s localStorage"
+          ],
+          "skills": "JS, Bootstrap Flex, Bootstrap Spacing, ES6, localStorage",
+          "img": [
+            {
+              "imgURL": "/public/assets/images/qtrip/adventurePage.png",
+              "imgDisc": "QTrip Adventures page"
+            },
+            {
+              "imgURL": "/public/assets/images/qtrip/category-feature.png",
+              "imgDisc": "Multi-select Filter"
+            }
+          ]
+        },
+        {
+          "heading": "Adventure details page",
+          "scope of work items": [
+            "Adventure details page with reservation support",
+            "Added a sleek image carousel using Bootstrap",
+            "Implemented reservation logic by using Fetch API to send a POST request to the backend, on form submission",
+            "Conditionally rendered the “Sold out” panel based on the API response"
+          ],
+          "skills": "JS, Bootstrap, Conditional rendering, Bootstrap Carousel",
+          "img": [
+            {
+              "imgURL": "/public/assets/images/qtrip/adventure-details.png",
+              "imgDisc": "QTrip Adventure Details"
+            },
+            {
+              "imgURL": "/public/assets/images/qtrip/carousel.png",
+              "imgDisc": "Image carousel on the Adventures page"
+            }
+          ]
+        },
+        {
+          "heading": "Show All reservations",
+          "scope of work items": [
+            "Reservations page to show all the reservations",
+            "Conditionally rendered the reservations page based on the API response"
+          ],
+          "skills": "JS, Conditional rendering",
+          "img": [
+            {
+              "imgURL": "/public/assets/images/qtrip/reservation.png",
+              "imgDisc": "QTrip Reservations page"
+            },
+            {
+              "imgURL": "",
+              "imgDisc": ""
+            }
+          ]
+        },
+        
+        {
+          "heading": "Deployment",
+          "scope of work items": [
+            "Deployed the QTrip backend to Render",
+            "Configured the QTrip dynamic frontend to use the Heroku deployed backend",
+            "Deployed the QTrip dynamic frontend to Netlify"
+          ],
+          "skills": "Deployment, Render, Netlify",
+          "img": [
+            {
+              "imgURL": "",
+              "imgDisc": ""
+            },
+            {
+              "imgURL": "",
+              "imgDisc": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "qkart": {
+    "projectMetaData": {
+      "projectId": "qkart",
+      "mockupImg": "/public/assets/images/kart.png",
+      "webColor": "bg-[#8FE070]/25",
+      "name": "QKart",
+      "projectTime": "Sep, 2023",
+      "discription": "This project is a part of Crio Fellowship Program in Software Development aimed towards enabling the graduatee to become a skilled & certified full stack engineer.",
+      "secondDiscription":"Qkart is 1st out of 3 capstone projects assigned from 'Crio' in order to receive certification in 'Fellowship Program in Software Development'.",
+      "techStack": ["React", "Material UI", "HTTP", "REST APIs", "Git"],
+      "site": "sitURL",
+      "github": "gitURL",
+      "videoDemo": "videoURL",
+      "projectInfo": "As a learner in Crio, I implemented React reusable components for registration, authentication, cart & checkout and conditional rendering of cart items.",
+      "secondProjectInfo": "This is an E-commerce application designed and develop to cater the need of customer by offering a variety of products where all the products data is fetched dynamically via REST APIs from backend"
+    },
+    "projectData": {
+      "Overview": {
+        "subHeading": "QKart is an E-commerce application offering a variety of products for customers to choose from.",
+        "list": "During the course of this project, I have",
+        "listItems": [
+          "Implemented the core logic for registration, login-authentication, products page, shopping cart and checkout",
+          "Improved UI by adding responsive design elements for uniform experience across different devices",
+          "Utilized REST APIs to dynamically load and render data served by the backend server",
+          "Deployed the website using Netlify for Frontend and Render for Backend"
+        ],
+        "img": [
+          {
+            "imgURL": "/public/assets/images/qkart/qkartArch.png",
+            "imgDisc": "QKart Component Architecture"
+          },
+          {
+            "imgURL": "/public/assets/images/qkart/qkart-landingPage.png",
+            "imgDisc": "QKart Shopping Interface (Products page)"
+          }
+        ]
+      },
+      "features": [
+        {
+          "heading": "Registration & Login feature",
+          "scope of work items": [
+            "Implemented logic and used backend API to get the registration & login feature ready",
+            "Added validation for the register form user input values to display informative error messages",
+            ""
+          ],
+          "skills": "React.js, Event Handling, Forms, React Hooks, REST API, Error Handling",
+          "img": [
+            {
+              "imgURL": "/public/assets/images/qkart/registrationPage.png",
+              "imgDisc": "Registration Page Interface"
+            },
+            {
+              "imgURL": "/public/assets/images/qkart/loginpage-with-error.png",
+              "imgDisc": "Login Page with error message (for wrong credentials)"
+            }
+          ]
+        },
+
+        {
+          "heading": "Registration-Login flow & routing",
+          "scope of work items": [
+            "Used React Router library to set up routes in the application and redirect customers to appropriate pages",
+            "Added UI and logic to get the Login page ready",
+            "Stored user information at client side using localStorage to avoid login on revisit"
+          ],
+          "skills": "React Router, Material UI, localStorage, Controlled Components, Conditional Rendering",
+          "img": [
+            {
+              "imgURL": "/public/assets/images/qkart/request-login.png",
+              "imgDisc": "Request-response cycle for QKart User signup and login"
+            },
+            {
+              "imgURL": "/public/assets/images/qkart/login-flow.png",
+              "imgDisc": "User flow on website for signup and login"
+            }
+          ]
+        },
+        {
+          "heading": "Shopping cart and Checkout flow",
+          "scope of work items": [
+            "Added Cart to Products page and made it responsive",
+            "Made authenticated POST API calls to implement Cart logic",
+            "Rendered Cart with differing designs in Products page and Checkout page using conditional rendering",
+            "Implemented UI and logic to add and select new addresses"
+          ],
+          "skills": "Responsive Design, Reusable Components, HTTP Request, Conditional Rendering",
+          "img": [
+            {
+              "imgURL": "/public/assets/images/qkart/kart.png",
+              "imgDisc": "Products page UI with responsive Cart design (Left: Desktop, Right: Mobile)"
+            },
+            {
+              "imgURL": "/public/assets/images/qkart/checkout.png",
+              "imgDisc": "QKart Checkout page"
+            }
+          ]
+        },
+        {
+          "heading": "Search feature with products display",
+          "scope of work items": [
+            "Utilized the useEffect() hook to fetch products data after DOM is rendered for faster page loading",
+            "Added search bar to display only on the Products page’s header and implemented search logic",
+            "Implemented debouncing for improved UX and reduced API calls on search"
+          ],
+          "skills": "Keyword Search, Debouncing, React Hooks, Material UI Grid",
+          "img": [
+            {
+              "imgURL": "/public/assets/images/qkart/search-products.png",
+              "imgDisc": "QKart Products page with search functionality resulting in leather products for searching 'leather'"
+            },
+            {
+              "imgURL": "/public/assets/images/qkart/empty-search.png",
+              "imgDisc": "Product not found result for 'abc'"
+            }
+          ]
+        },
+        {
+          "heading": "Deployment",
+          "scope of work items": [
+            "Deployed the QKart React app to Netlify",
+            "Configured Netlify to support visiting any sub pages directly as React is a single page application",
+            ""
+          ],
+          "skills": "Deployment, Netlify",
+          "img": [
+            {
+              "imgURL": "",
+              "imgDisc": ""
+            },
+            {
+              "imgURL": "",
+              "imgDisc": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "4uacademy": {
+    "projectMetaData": {
+      "projectId": "4uacademy",
+      "mockupImg": "./../../../public/assets/images/academy.png",
+      "webColor": "bg-[#f0f8ff]",
+      "name": "4U Academy",
+      "projectTime": "Oct, 2023",
+      "discription": "4U Academy runs industry led programs to enhance the learner's job ready skills, through various modes including online teaching, offline classes & mock interviews to nurture the learner's capability of understanding the principles and logics of web development & acing in  their careers. ",
+      "techStack": ["React", "Tailwind CSS", "Bootstrap"],
+      "site": "sitURL",
+      "github": "gitURL",
+      "videoDemo": "videoURL",
+      "projectInfo": "I led the development of a comprehensive web platform for an ed-tech startup, utilizing React, Tailwind CSS & Bootstrap to craft a responsive and user-friendly interface. Leveraging my skills, I meticulously built the entire website from the ground up, ensuring seamless navigation and engaging user experiences. To optimize deployment and accessibility, I successfully deployed the project through Netlify, providing a reliable and efficient hosting solution.",
+      "secondProjectInfo": ""
+    },
+    "projectData": {
+      "Overview": {
+        "subHeading": "4U Academy is an industry led program to enhance the learner's job ready skills, through various modes including online teaching, offline classes, mock interviews to nurture the learner's capability of understanding the principles and logics of web development & acing in  their careers. ",
+        "list": "During the course of this project, I have",
+        "listItems": [
+          "Implemented responsive design system for landing, about, courses, placements pages. Also implemented carousel for student reviews",
+          "Created these pages using React & styled them with help of Tailwind CSS & React Bootstrap",
+          "Utilized locally stored data in JSON format to dynamically load and render course cards & placement card detials",
+          "Deployed website to Netlify"
+        ],
+        "img": [
+          {
+            "imgURL": "./../../../public/assets/images/4uacademy/4u-landingPage.png",
+            "imgDisc": "4U Academy Interface (Landing page)"
+          },
+          {
+            "imgURL": "./../../../public/assets/images/4uacademy/courseCards.png",
+            "imgDisc": "Course Cards section on landing page"
+          }
+        ]
+      },
+      "features": [
+        {
+          "heading": "Reviews Carousel",
+          "scope of work items": [
+            "Implemented a carousel for student reviews using react-reponsive-carousel dependency",
+            "Added data from locally maintained JSON file",
+            ""
+          ],
+          "skills": "React-responsive-carousel, JSON, React.js",
+          "img": [
+            {
+              "imgURL": "./../../../public/assets/images/4uacademy/carousel.png",
+              "imgDisc": "Student Reviews Carousel"
+            },
+            {
+              "imgURL": "",
+              "imgDisc": "remove it later"
+            }
+          ]
+        },
+
+        {
+          "heading": "Placement Page",
+          "scope of work items": [
+            "Used functional based component & made placement card component",
+            "Placement card componenet is rendered after parsing through json data array by passing props to child component",
+            ""
+          ],
+          "skills": "Reusable Components, JSON, Responsive Design",
+          "img": [
+            {
+              "imgURL": "./../../../public/assets/images/4uacademy/placementPage.png",
+              "imgDisc": "Placement Page"
+            },
+            {
+              "imgURL": "./../../../public/assets/images/4uacademy/placementCards.png",
+              "imgDisc": "Placement Cards"
+            }
+          ]
+        },
+
+        {
+          "heading": "Responsive Design",
+          "scope of work items": [
+            "Improved user experience by making whole website responsive & accessible across defferent devices",
+            "Used media queries in plain CSS & breakpoint prefix provided by Tailwind CSS to achieve the responsive design results",
+            ""
+          ],
+          "skills": "Media queries, Tailwind CSS",
+          "img": [
+            {
+              "imgURL": "./../../../public/assets/images/4uacademy/responsive-landingPage.png",
+              "imgDisc": "Responsive Landing Page"
+            },
+            {
+              "imgURL": "./../../../public/assets/images/4uacademy/response-placementPage.png",
+              "imgDisc": "Responsive Placement Cards"
+            }
+          ]
+        },
+        {
+          "heading": "Deployment",
+          "scope of work items": [
+            "Deployed the 4U Academy React app to Netlify",
+            "Configured Netlify to support visiting any sub pages directly as React is a single page application",
+            "Uploaded on netlify from git repo directly"
+          ],
+          "skills": "Deployment, Git, GitHub, Netlify",
+          "img": [
+            {
+              "imgURL": "",
+              "imgDisc": ""
+            },
+            {
+              "imgURL": "",
+              "imgDisc": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "kdevents": {
+    "projectMetaData": {
+      "projectId": "kdevents",
+      "mockupImg": "./../../../public/assets/images/kd.png",
+      "webColor": "bg-[#F5F8FD]",
+      "name": "SLA Finance | KD Events",
+      "projectTime": "Nov, 2023",
+      "discription": "SLA Finance | With 8000+ clients across boundaries, SLA has been awarded as the Best Financial Advisor (North India) for F.Y. 2013 - 14 by CNBC and by Wealth Forum for F.Y. 2010 - 11 and F.Y. 2013 - 14. ",
+      "secondDiscription" : "KD Events is a premier event management company working under SLA",
+      "techStack": ["React", "Bootstrap", "EmailJS", "Material UI"],
+      "site": "sitURL",
+      "github": "gitURL",
+      "videoDemo": "videoURL",
+      "projectInfo": "As a freelancer, I took the project as a solo developer & designer. Utilizing React, I prioritized user-centric design, fostering seamless navigation and engaging interactions. The deployment on Netlify ensures a reliable foundation, offering a smooth journey for users exploring KDEvents.",
+      "secondProjectInfo": ""
+    },
+    "projectData": {
+      "Overview": {
+        "subHeading": "4U Academy is an industry led program to enhance the learner's job ready skills, through various modes including online teaching, offline classes, mock interviews to nurture the learner's capability of understanding the principles and logics of web development & acing in  their careers. ",
+        "list": "During the course of this project, I have",
+        "listItems": [
+          "Implemented the KD Events business website using React, Bootstrap & Material UI",
+          "Created a Contact Us section using EmailJS dependency for getting queries direcly on mail",
+          "Improved UI by adding responsive design elements for uniform experience across different devices",
+          "Deployed website to Netlify"
+        ],
+        "img": [
+          {
+            "imgURL": "./../../../public/assets/images/kdevents/kdevent-landingPage.png",
+            "imgDisc": "KD Events Landing Page"
+          },
+          {
+            "imgURL": "",
+            "imgDisc": "remove it later"
+          }
+        ]
+      },
+      "features": [
+        {
+          "heading": "Landing Page",
+          "scope of work items": [
+            "Implemented different sections on landing page including hero, services, features & benifits, our team, testimonials & contact us",
+            "Worked with different packages like EmailJS, Fontawesome Icons, React-router-hash-link",
+            ""
+          ],
+          "skills": "React.js, React Hooks, Material UI, Responsive Design",
+          "img": [
+            {
+              "imgURL": "./../../../public/assets/images/kdevents/services.png",
+              "imgDisc": "Services section"
+            },
+            {
+              "imgURL": "./../../../public/assets/images/kdevents/team.png",
+              "imgDisc": "Team section"
+            }
+          ]
+        },
+
+        {
+          "heading": "Email JS Service",
+          "scope of work items": [
+            "EmailJS is a service that allows us to send emails directly from your client-side JavaScript code",
+            "Implemented contact us section by integrating it with EmailJS to get queries to mail direclty",
+            "Used form with input validation to collect data from user"
+          ],
+          "skills": "EamilJS, Forms, Event Handling, Input validation",
+          "img": [
+            {
+              "imgURL": "./../../../public/assets/images/kdevents/contact.png",
+              "imgDisc": "Contact Us section using EmailJS"
+            },
+            {
+              "imgURL": "",
+              "imgDisc": "remove it later"
+            }
+          ]
+        },
+
+        {
+          "heading": "Responsive Design",
+          "scope of work items": [
+            "Improved user experience by making whole website responsive & accessible across defferent devices",
+            "Used media queries breakpoint prefix provided by Bootstrap to achieve the responsive design results",
+            ""
+          ],
+          "skills": "Media queries, Bootstrap, Flexbox, CSS Gird",
+          "img": [
+            {
+              "imgURL": "./../../../public/assets/images/kdevents/res-hero.png",
+              "imgDisc": "Responsive Hero & Services Section"
+            },
+            {
+              "imgURL": "./../../../public/assets/images/kdevents/res-team.png",
+              "imgDisc": "Responsive Team & Contact Section"
+            }
+          ]
+        },
+        {
+          "heading": "Deployment",
+          "scope of work items": [
+            "Deployed the KD Events React app to Netlify",
+            "Uploaded on netlify from git repo directly"
+          ],
+          "skills": "Deployment, Git, GitHub, Netlify",
+          "img": [
+            {
+              "imgURL": "",
+              "imgDisc": ""
+            },
+            {
+              "imgURL": "",
+              "imgDisc": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

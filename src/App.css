@@ -1,0 +1,35 @@
+.right-arrow{
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    clip-path: polygon(60% 12%, 61% 58%, 78% 59%, 50% 88%, 22% 59%, 39% 58%, 39% 11%);
+    /* transform: rotate(90deg); */
+}
+
+.naruto:focus{
+
+    outline: none;
+
+}
+
+/* #inputName:hover {
+    #userName{
+
+        background-color: blue !important;
+    }
+} */
+
+/* #userName:hover{
+    #inputName{
+        background-color: green !important;
+    }
+    background-color: red;
+} */
+
+/* #inputName:hover #userName{
+    background-color: red !important;
+} */
