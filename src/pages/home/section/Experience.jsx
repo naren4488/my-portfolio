@@ -13,9 +13,10 @@ const Experience = () => {
             role="Web developer & Tutor"
             duration="Dec,2021 - present"
             answer={[
-              "Hello world  =i am building my portfolio i am enjoying accordion here lorem=i am building my portfolio i am enjoying accordion here lorem",
-              "bye-bye =i am building my portfolio i am enjoying accordion here lorem",
-              "html is good =i am building my portfolio i am enjoying accordion here lorem=i am building my portfolio i am enjoying accordion here lorem",
+              "Lead the team of 5 including web-designer, intern & tutors.",
+              "Mentored 100+ students at 4U Academy.",
+              "Responsible for tutoring Java to 60+ students throughout the period.",
+              "Improved the website's performance, accessibility & responsiveness.",
             ]}
           />
           <Accordion
@@ -23,14 +24,20 @@ const Experience = () => {
             title="Urban Biotix"
             role="Web developer & Co-founder"
             duration="Aug,2022 - Dec,2022"
-            answer={["hello", "bye-bye", "html is good"]}
+            answer={[
+              "Initiated the Go-Green slogan to be a reality in Jaipur urban areas. Raised 7 lac funding with co-founders at JECRC Inclubation Center form state government.",
+              "30+ successfull rooftop garden projects throughout the span of 4 months",
+            ]}
           />
           <Accordion
             id="3"
-            title="Freelancing"
-            role="Web developer"
-            duration="Oct, 2023 - present"
-            answer={["hello", "bye-bye", "html is good"]}
+            title="Crio Fellowship Program in Software Development"
+            role="Learner"
+            duration="March, 2023 - Jan, 2024"
+            answer={[
+              "Followed the path of 'learn by building' to ascertain & achieve my interest in frontend development. ",
+              "Mastered core frontend development skills like HTML, CSS, JavaScript & React and built real-time industry project including e-commerce & travel-booking web apps.",
+            ]}
           />
         </div>
       </div>

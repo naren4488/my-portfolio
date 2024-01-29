@@ -7,12 +7,23 @@ const Header = () => {
       {/* hover:backdrop-blur-sm hover:bg-black hover:text-white */}
       <div className="group flex w-full items-center justify-between border  border-black bg-white px-8  py-1  hover:shadow-lg">
         <div>
-          <img
-            className="scale-[2] text-4xl"
-            src={naren}
-            height={40}
-            width={40}
-          />
+          <HashLink
+            to={`/#top`}
+            smooth
+            // scroll={(el) => {
+            //   const yOffset = -100; // Adjust the offset to your liking
+            //   const y =
+            //     el.getBoundingClientRect().top + window.scrollY + yOffset;
+            //   window.scrollTo({ top: y, behavior: "smooth" });
+            // }}
+          >
+            <img
+              className="scale-[2] text-4xl"
+              src={naren}
+              height={40}
+              width={40}
+            />
+          </HashLink>
         </div>
         <div className="flex gap-12 ">
           <HashLink to={"/#about"} smooth className="hover:underline">

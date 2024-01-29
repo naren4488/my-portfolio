@@ -11,11 +11,14 @@ import { useEffect } from "react";
 
 export default function App() {
   window.onbeforeunload = () => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   };
   const { pathname } = useLocation();
   useEffect(() => {
-    window.scrollTo({ top: 1320, left: 0 });
+    // const element = document.getElementById("4uacademy");
+    // let offset = -80;
+    // let pos = element.offsetTop + offset;
+    // window.scrollTo({ top: pos, left: 0 });
   }, [pathname]);
   return (
     <div className="font-sans font-light tracking-wide">

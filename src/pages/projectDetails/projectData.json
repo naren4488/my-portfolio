@@ -1,7 +1,7 @@
 {
   "qtrip": {
     "projectMetaData": {
-      "projectId": "qtirp",
+      "projectId": "qtrip",
       "mockupImg": "/assets/images/trip.png",
       "webColor": "bg-[#7F3E0A]/20",
       "name": "QTrip",
@@ -93,7 +93,7 @@
               "imgDisc": "QTrip Adventure Details"
             },
             {
-              "imgURL": "/assets/images/qtrip/carousel.png",
+              "imgURL": "/assets/images/qtrip/qtrip-carousel.png",
               "imgDisc": "Image carousel on the Adventures page"
             }
           ]
@@ -484,11 +484,11 @@
           "img": [
             {
               "imgURL": "./../../../assets/images/kdevents/res-hero.png",
-              "imgDisc": "Responsive Hero & Services Section"
+              "imgDisc": "Responsive: Hero & Team Section"
             },
             {
               "imgURL": "./../../../assets/images/kdevents/res-team.png",
-              "imgDisc": "Responsive Team & Contact Section"
+              "imgDisc": "Responsive: Services & Contact Section"
             }
           ]
         },

@@ -3,11 +3,12 @@ import ProjectDetailsCard from "../../components/ProjectDetailsCard";
 import projectDataJSON from "./projectData.json";
 import ProjectHeader from "./ProjectHeader";
 import { useEffect } from "react";
-import { NavHashLink } from "react-router-hash-link";
+import { Link } from "react-scroll";
 import EmbedVideo from "../../components/EmbedVideo";
+import "./Naren.css";
 
 const ProjectDetails = () => {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   const naren = window.location.pathname;
   let { projectId } = useParams(); // to get dynamic path details
 
@@ -26,11 +27,11 @@ const ProjectDetails = () => {
   } = projectDataJSON[projectId].projectMetaData;
   const { projectData } = projectDataJSON[projectId];
 
-  const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -80;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-  };
+  // const scrollWithOffset = (el) => {
+  //   const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
+  //   const yOffset = -80;
+  //   window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  // };
 
   return (
     <div
@@ -39,45 +40,64 @@ const ProjectDetails = () => {
       {/* Navbar */}
       <ProjectHeader webColor={webColor} />
 
-      {/* bookmarks sidebar */}
+      {/* bookmarks */}
       <div className="fixed  right-28 top-24  w-[280px] ">
         <p className="mb-2 text-xl">Page Contents</p>
-        <div className=" border-l border-gray-600">
-          <NavHashLink key={projectId} to={`${naren}#top`} smooth className="">
-            <p className={`break-normal px-4 pb-2 underline  `}>{name}</p>
-          </NavHashLink>
-          <NavHashLink
-            key={"top"}
-            to={`${naren}#overview`}
-            smooth
-            scroll={(el) => scrollWithOffset(el)}
-            className=""
+        <div className="flex flex-col border-l border-gray-600">
+          <Link
+            key={projectId}
+            to={`top`}
+            className={``}
+            activeClass="text-white bg-[#131417]  "
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={300}
+            // onSetActive={handleSetActive}
           >
-            <p className={`break-normal px-4 py-2 underline `}>What I Did</p>
-          </NavHashLink>
+            <p className={`cursor-pointer break-normal px-4  py-2 `}>{name}</p>
+          </Link>
+          <Link
+            key={`${projectId}overview`}
+            to={`overview`}
+            activeClass="text-white bg-[#131417]  "
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={300}
+            // onSetActive={handleSetActive}
+          >
+            <p className={`cursor-pointer break-normal px-4  py-2 `}>
+              What I Did
+            </p>
+          </Link>
+
           {projectData["features"].map((feature, idx) => {
             return (
-              <NavHashLink
+              <Link
                 key={feature["heading"]}
-                to={`${naren}#${projectId.toLowerCase()}feature${idx}`}
-                smooth
-                scroll={(el) => scrollWithOffset(el)}
-                className=""
+                to={`${projectId.toLowerCase()}feature${idx}`}
+                activeClass="text-white bg-[#131417]  "
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={300}
+                // onSetActive={handleSetActive}
               >
-                <p className={`break-normal px-4 py-2 underline`}>
+                <p className={`cursor-pointer break-normal px-4  py-2 `}>
                   {feature.heading}
                 </p>
-              </NavHashLink>
+              </Link>
             );
           })}
         </div>
       </div>
 
       {/* Project details page */}
-      <div className="w-3/4  pb-10 pt-24">
+      <div className="w-3/4 pb-80 pt-24">
         <div className="">
           {/* hero section */}
-          <div className="  border-b border-gray-400 bg-white p-6">
+          <div id="top" className="  border-b border-gray-400 bg-white p-6">
             <h1 className="my-1  text-2xl font-normal">{name}</h1>
             <div className="relative flex gap-8">
               <div className=" w-1/2 pb-4">
