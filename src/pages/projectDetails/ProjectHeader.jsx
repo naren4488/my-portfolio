@@ -1,4 +1,4 @@
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import naren from "./../../assets/logoSVGs/nk.png";
 import { HashLink } from "react-router-hash-link";
 
@@ -6,23 +6,13 @@ import { HashLink } from "react-router-hash-link";
 const ProjectHeader = () => {
   let { projectId } = useParams();
 
-  // console.log(projectId);
   return (
     <header className="fixed left-0 top-4 z-10 h-16 w-full  px-28 backdrop-blur-none">
       <div
         className={`group flex w-full items-center justify-between border border-black bg-white px-8  py-1  hover:shadow-lg`}
       >
         <div>
-          <HashLink
-            to={`/#top`}
-            smooth
-            // scroll={(el) => {
-            //   const yOffset = -100; // Adjust the offset to your liking
-            //   const y =
-            //     el.getBoundingClientRect().top + window.scrollY + yOffset;
-            //   window.scrollTo({ top: y, behavior: "smooth" });
-            // }}
-          >
+          <HashLink to={`/#top`} smooth>
             <img
               className="scale-[2] text-4xl"
               src={naren}
@@ -35,7 +25,7 @@ const ProjectHeader = () => {
           <HashLink
             to={`/#${projectId}`}
             scroll={(el) => {
-              const yOffset = -100; // Adjust the offset to your liking
+              const yOffset = -100;
               const y =
                 el.getBoundingClientRect().top + window.scrollY + yOffset;
               window.scrollTo({ top: y, behavior: "smooth" });

@@ -1,20 +1,12 @@
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ProjectDetailsCard from "../../components/ProjectDetailsCard";
 import projectDataJSON from "./projectData.json";
 import ProjectHeader from "./ProjectHeader";
-import { useEffect } from "react";
 import { Link } from "react-scroll";
 import EmbedVideo from "../../components/EmbedVideo";
-import "./Naren.css";
 
 const ProjectDetails = () => {
-  const { pathname, hash } = useLocation();
-  const naren = window.location.pathname;
-  let { projectId } = useParams(); // to get dynamic path details
-
-  useEffect(() => {
-    // window.scrollTo(0, 0);
-  }, [pathname]);
+  let { projectId } = useParams();
 
   const {
     name,
@@ -26,12 +18,6 @@ const ProjectDetails = () => {
     webColor,
   } = projectDataJSON[projectId].projectMetaData;
   const { projectData } = projectDataJSON[projectId];
-
-  // const scrollWithOffset = (el) => {
-  //   const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
-  //   const yOffset = -80;
-  //   window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-  // };
 
   return (
     <div
@@ -53,7 +39,6 @@ const ProjectDetails = () => {
             smooth={true}
             offset={-100}
             duration={300}
-            // onSetActive={handleSetActive}
           >
             <p className={`cursor-pointer break-normal px-4  py-2 `}>{name}</p>
           </Link>
@@ -65,7 +50,6 @@ const ProjectDetails = () => {
             smooth={true}
             offset={-80}
             duration={300}
-            // onSetActive={handleSetActive}
           >
             <p className={`cursor-pointer break-normal px-4  py-2 `}>
               What I Did
@@ -82,7 +66,6 @@ const ProjectDetails = () => {
                 smooth={true}
                 offset={-80}
                 duration={300}
-                // onSetActive={handleSetActive}
               >
                 <p className={`cursor-pointer break-normal px-4  py-2 `}>
                   {feature.heading}
