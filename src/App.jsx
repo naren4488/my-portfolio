@@ -21,7 +21,7 @@ export default function App() {
     // window.scrollTo({ top: pos, left: 0 });
   }, [pathname]);
   return (
-    <div className="font-sans font-light tracking-wide">
+    <div className="font-sans font-light tracking-wide ">
       <Header />
       <Hero />
       <About />

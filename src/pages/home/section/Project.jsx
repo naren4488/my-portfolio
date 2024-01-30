@@ -10,10 +10,10 @@ const Project = () => {
   ];
 
   return (
-    <div id="work" className=" px-28  pt-24">
-      <h1 className="flex items-center justify-between pb-12 text-4xl">
+    <div id="work" className=" px-28  pt-24 max-sm:px-8">
+      <h1 className="flex items-center justify-between pb-12 text-4xl max-sm:text-2xl">
         <div>My Work</div>
-        <div className="text-lg">Hands-on Experience</div>
+        <div className="text-lg max-sm:text-base">Hands-on Experience</div>
       </h1>
 
       {projects.map((project, idx) => (

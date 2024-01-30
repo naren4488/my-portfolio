@@ -3,8 +3,8 @@ import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   return (
-    <header className="fixed top-4 z-10 h-16 w-full px-28">
-      <div className="group flex w-full items-center justify-between border  border-black bg-white px-8  py-1  hover:shadow-lg">
+    <header className="fixed top-4 z-10 h-16 w-full px-28 max-sm:px-8">
+      <div className="flex  items-center justify-between border  border-black bg-white px-8  py-1  hover:shadow-lg max-sm:px-4">
         <div>
           <HashLink to={`/#top`} smooth>
             <img

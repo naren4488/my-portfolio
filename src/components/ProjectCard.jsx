@@ -20,11 +20,11 @@ const ProjectCard = ({ projectMetaData, reverse, projectpath }) => {
       id={`${projectId}`}
       className={`group mb-20 flex justify-between border border-gray-400 ${
         reverse && "flex-row-reverse"
-      }`}
+      } max-sm:flex-col`}
     >
       <div className=" relative flex-1 p-8">
         <div className="flex items-baseline justify-between gap-4 pb-6">
-          <h1 className="text-3xl ">{name} </h1>
+          <h1 className="text-3xl max-sm:text-xl">{name} </h1>
         </div>
         <p className="pb-2 text-justify">{projectInfo}</p>
         <p className="pb-4 text-justify">{secondProjectInfo}</p>
@@ -59,7 +59,7 @@ const ProjectCard = ({ projectMetaData, reverse, projectpath }) => {
       {/* image column */}
       <div className="">
         <div className="p-8">
-          <div className="h-[400px] w-[500px] ">
+          <div className="h-[400px] w-[500px] max-sm:h-[200px] max-sm:w-[250px]">
             <img
               src={mockupImg}
               alt=""

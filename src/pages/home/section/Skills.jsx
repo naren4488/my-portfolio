@@ -11,66 +11,138 @@ import jsonlogo from "./../../../assets/narendra/json.svg";
 
 const Skills = () => {
   return (
-    <div className="h-fit  px-28 py-10">
+    <div className="h-fit px-28 py-10 max-sm:px-8">
       <div className="">
         <h1 className="mb-3 text-4xl">Tech Stack</h1>
         {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi qui animi minus nemo dolorem.</p> */}
         {/* skills cols */}
         <div className="flex justify-between py-8 text-center text-xl  leading-[56px]">
           <div className=" flex  flex-1 flex-col items-center">
-            <div className="flex w-[134px] items-center  gap-3">
-              <img src={htmlLOGO} alt="" height={24} width={24} />
-              <p>HTML</p>
+            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-3">
+              <div className="h-[24px] w-[24px]">
+                <img
+                  src={htmlLOGO}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <p className="max-sm:hidden">HTML</p>
             </div>
-            <div className="flex w-[134px] items-center  gap-3">
-              <img src={csslogo} alt="" height={24} width={24} />
-              <p>CSS</p>
+            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-3">
+              <div className="h-[24px] w-[24px]">
+                <img
+                  src={csslogo}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <p className="max-sm:hidden">CSS</p>
             </div>
-            <div className="flex w-[134px] items-center  gap-3">
-              <img src={jslogo} alt="" height={24} width={24} />
-              <p>JavaScript</p>
+            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-3">
+              <div className="h-[24px] w-[24px]">
+                <img
+                  src={jslogo}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <p className="max-sm:hidden">JavaScript</p>
             </div>
-            <div className="flex w-[134px] items-center  gap-3">
-              <img src={reactlogo} alt="" height={24} width={24} />
-              <p>React</p>
+            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-3">
+              <div className="h-[24px] w-[24px]">
+                <img
+                  src={reactlogo}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <p className="max-sm:hidden">React</p>
             </div>
           </div>
           <div className="border-l  border-gray-600"></div>
           <div className=" flex  flex-1 flex-col items-center">
-            <div className="flex w-[134px] items-center  gap-3">
-              <img src={tailwindlogo} alt="" height={24} width={24} />
-              <p>Tailwind</p>
+            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-3">
+              <div className="h-[24px] w-[24px]">
+                <img
+                  src={tailwindlogo}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <p className="max-sm:hidden">Tailwind</p>
             </div>
-            <div className="flex w-[134px] items-center  gap-3">
-              <img src={materiallogo} alt="" height={24} width={24} />
-              <p>Material UI</p>
+            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-3">
+              <div className="h-[24px] w-[24px]">
+                <img
+                  src={materiallogo}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <p className="max-sm:hidden">Material UI</p>
             </div>
-            <div className="flex w-[134px] items-center  gap-3">
-              <img src={bootstraplogo} alt="" height={24} width={24} />
-              <p>Bootstrap</p>
+            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-3">
+              <div className="h-[24px] w-[24px]">
+                <img
+                  src={bootstraplogo}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <p className="max-sm:hidden">Bootstrap</p>
             </div>
-            <div className="flex w-[134px] items-center  gap-3">
-              <img src={jsonlogo} alt="" height={24} width={24} />
-              <p>JSON</p>
+            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-3">
+              <div className="h-[24px] w-[24px]">
+                <img
+                  src={jsonlogo}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <p className="max-sm:hidden">JSON</p>
             </div>
           </div>
           <div className="border-l  border-gray-600"></div>
           <div className=" flex  flex-1 flex-col items-center">
-            <div className="flex w-[134px] items-center  gap-3">
-              <img src={gitlogo} alt="" height={24} width={24} />
-              <p>Git</p>
+            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-3">
+              <div className="h-[24px] w-[24px]">
+                <img
+                  src={gitlogo}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <p className="max-sm:hidden">Git</p>
             </div>
-            <div className="flex w-[134px] items-center  gap-3">
-              <img src={githublogo} alt="" height={24} width={24} />
-              <p>Github</p>
+            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-3">
+              <div className="h-[24px] w-[24px]">
+                <img
+                  src={githublogo}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <p className="max-sm:hidden">Github</p>
             </div>
-            <div className="flex w-[134px] items-center  gap-3">
-              <img src={jsonlogo} alt="" height={24} width={24} />
-              <p>REST APIs</p>
+            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-3">
+              <div className="h-[24px] w-[24px]">
+                <img
+                  src={jsonlogo}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <p className="max-sm:hidden">REST APIs</p>
             </div>
-            <div className="flex w-[134px] items-center  gap-3">
-              <img src={jsonlogo} alt="" height={24} width={24} />
-              <p>HTTP</p>
+            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-3">
+              <div className="h-[24px] w-[24px]">
+                <img
+                  src={jsonlogo}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <p className="max-sm:hidden">HTTP</p>
             </div>
           </div>
         </div>
