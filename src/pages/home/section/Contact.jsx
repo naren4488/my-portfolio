@@ -33,14 +33,14 @@ const Contact = () => {
       id="contact"
       className="bg-[#131417] px-28 py-6 pb-32 text-white max-sm:px-8"
     >
-      <h1 className="mb-10 mt-16 text-4xl">{`Let's Connect`}</h1>
+      <h1 className="mb-10 mt-16 text-4xl font-normal max-sm:text-2xl">{`Let's Connect`}</h1>
       {/* email form div */}
 
       <div className="">
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex items-end  justify-between gap-10 max-sm:flex-col max-sm:items-start"
+          className="flex items-end  justify-between gap-10 max-sm:flex-col max-sm:items-start max-sm:text-sm"
         >
           <div className="flex flex-col max-sm:w-full">
             <label id="inputName" className="mb-1" htmlFor="userName">
@@ -89,7 +89,7 @@ const Contact = () => {
             className="m-3 flex shrink-0 items-center gap-4 bg-white px-4 py-2 text-black max-sm:m-0 "
           >
             <div>Send Message</div>
-            <div>
+            <div className="">
               <img src={sendicon} alt="" height={30} width={30} />
             </div>
           </button>

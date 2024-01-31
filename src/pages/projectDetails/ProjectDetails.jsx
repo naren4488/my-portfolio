@@ -15,7 +15,7 @@ const ProjectDetails = () => {
 
   return (
     <div
-      className={`relative flex justify-start px-28 font-light  tracking-wide max-sm:px-8`}
+      className={`relative flex justify-start px-28 font-light  tracking-wide max-sm:px-6`}
     >
       {/* Navbar */}
       <ProjectHeader />
@@ -79,20 +79,19 @@ const ProjectDetails = () => {
           id="top"
           className="  border-b border-gray-400 bg-white p-6 max-sm:px-0"
         >
-          <h1 className="my-1 text-2xl font-normal">{name}</h1>
+          <h1 className="my-1 text-2xl font-normal max-sm:text-xl">{name}</h1>
           <div className="relative flex gap-8 max-sm:flex-col">
-            <div className=" w-1/2 pb-4 max-sm:w-full">
+            <div className=" w-1/2 pb-4 max-sm:w-full max-sm:text-sm">
               <p>{discription}</p>
               {secondDiscription && <p className="mt-2">{secondDiscription}</p>}
 
-              <div className=" bottom-4  left-0 right-0 mt-10 flex gap-8 ">
+              <div className=" bottom-4  left-0 right-0 mt-10 flex gap-8 max-sm:text-base">
                 <p className=" border-b-2 border-black">View Site</p>
                 <p className=" border-b-2 border-black">GitHub Repo</p>
               </div>
             </div>
 
             <div className="flex-1 pl-4 max-sm:p-0">
-              {/* <p className="mb-4 text-center text-2xl">Watch Video Demo</p> */}
               <EmbedVideo videoID={"t1QBSRRhwX8"} />
             </div>
           </div>
@@ -100,10 +99,12 @@ const ProjectDetails = () => {
 
         {/* <div className="m-auto mt-8 w-1/2 border border-gray-400"></div> */}
         {/* overview card */}
-        <div id="overview" className="  mt-6  bg-white p-6 max-sm:px-0">
-          <h1 className="mb-1 text-2xl font-normal">What I Did</h1>
-          <p>{projectData["Overview"]["list"]}</p>
-          <ul className=" mb-4 list-disc pl-16 max-sm:pl-6">
+        <div id="overview" className="  mt-20  bg-white p-6 max-sm:px-0">
+          <h1 className="mb-1 text-2xl font-normal max-sm:text-xl">
+            What I Did
+          </h1>
+          <p className="max-sm:text-sm">{projectData["Overview"]["list"]}</p>
+          <ul className=" mb-4 list-disc pl-16 max-sm:pl-6 max-sm:text-sm">
             {projectData["Overview"]["listItems"].map((data, idx) => (
               <li key={idx}>{data}</li>
             ))}
@@ -118,7 +119,7 @@ const ProjectDetails = () => {
                       alt={obj.imgDisc}
                       className="  mb-4 h-[290px] object-contain shadow-lg ring-1 ring-slate-200 max-sm:h-[220px]"
                     />
-                    <p className="text-center">{obj.imgDisc}</p>
+                    <p className="text-center max-sm:text-sm">{obj.imgDisc}</p>
                   </div>
                 )
               );
