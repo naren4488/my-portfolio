@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import ProjectDetailsImgCard from "./ProjectDetailsImgCard";
+
 const ProjectDetailsCard = ({ feature, idIndex }) => {
   return (
     <div id={idIndex} className={` mt-20  bg-white p-6 max-sm:px-0`}>
@@ -19,18 +21,15 @@ const ProjectDetailsCard = ({ feature, idIndex }) => {
       {feature["img"][0].imgDisc && (
         <h3 className="mb-4 text-xl text-gray-600 max-sm:text-lg">Images</h3>
       )}
-      <div className="flex gap-10 max-sm:flex-col ">
-        {feature["img"].map((obj, idx) => {
+      <div className="flex gap-10 max-sm:flex-col">
+        {feature["img"].map((obj) => {
           if (obj.imgURL)
             return (
-              <div key={idx} className="w-1/2 max-sm:w-full">
-                <img
-                  src={obj.imgURL}
-                  alt={obj.imgDisc}
-                  className="mb-4 h-[290px] object-contain shadow-lg ring-1  ring-slate-200 max-sm:h-[220px] "
-                />
-                <p className="text-center max-sm:text-sm">{obj.imgDisc}</p>
-              </div>
+              <ProjectDetailsImgCard
+                key={obj.imgDisc}
+                imgURL={obj.imgURL}
+                imgDisc={obj.imgDisc}
+              />
             );
         })}
       </div>

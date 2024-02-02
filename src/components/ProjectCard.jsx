@@ -1,8 +1,27 @@
 /* eslint-disable react/prop-types */
 
 import { HashLink } from "react-router-hash-link";
+import readMoreArrow from "/assets/icons/read-more.svg";
+import { useState, useEffect } from "react";
 
 const ProjectCard = ({ projectMetaData, reverse, projectpath }) => {
+  const [isZoomed, setIsZoomed] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth > 640) {
+      if (isZoomed) document.body.style.overflow = "hidden";
+      else document.body.style.overflow = "scroll";
+    }
+    return () => {
+      document.body.style.overflow = "scroll";
+    };
+  }, [isZoomed]);
+  const handleZoom = () => {
+    if (window.innerWidth > 640) {
+      setIsZoomed(!isZoomed);
+    }
+  };
+
   const {
     name,
     techStack,
@@ -43,28 +62,37 @@ const ProjectCard = ({ projectMetaData, reverse, projectpath }) => {
             className=""
             to={`/project/${projectpath}/#top`}
             scroll={(el) => {
-              const yOffset = -100; // Adjust the offset to your liking
+              const yOffset = -100;
               const y =
                 el.getBoundingClientRect().top + window.scrollY + yOffset;
               window.scrollTo({ top: y, behavior: "auto" });
             }}
           >
-            <p className=" border-b-2 border-black">
+            <div className=" flex items-center border-b-2 border-black">
               Read More
-              <span className="pl-2 text-lg ">&#10513;</span>
-            </p>
+              <div className="h-[20px] w-[20px]   max-sm:h-[] max-sm:w-[]">
+                <img src={readMoreArrow} alt="" className="w-full" />
+              </div>
+            </div>
           </HashLink>
         </div>
       </div>
       {/* image column */}
       <div className="">
         <div className="p-8">
-          <div className=" h-[400px] w-[500px] max-sm:h-[220px] max-sm:w-[290px]">
-            <img
-              src={mockupImg}
-              alt=""
-              className="h-full w-full object-contain"
-            />
+          <div
+            className={` h-[400px] w-[500px]  max-sm:h-[220px] max-sm:w-[290px] `}
+          >
+            <div
+              className={`h-full w-full  ${isZoomed ? "fixed left-0 top-0 z-[200] bg-gray-400 bg-opacity-50 backdrop-blur-[2px] backdrop-filter" : "static"}`}
+            >
+              <img
+                src={mockupImg}
+                onClick={() => handleZoom()}
+                alt="mockup-img"
+                className={`h-full w-full  object-contain transition-all duration-200   ${isZoomed ? "sm:cursor-zoom-out " : "sm:cursor-zoom-in sm:hover:brightness-75"}`}
+              />
+            </div>
           </div>
         </div>
       </div>

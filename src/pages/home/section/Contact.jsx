@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-import sendicon from "./../../../assets/narendra/send.svg";
+import sendicon from "/assets/icons/message.svg";
 
 const Contact = () => {
   const form = useRef();
@@ -90,7 +90,7 @@ const Contact = () => {
           >
             <div>Send Message</div>
             <div className="">
-              <img src={sendicon} alt="" height={30} width={30} />
+              <img src={sendicon} alt="" height={28} width={28} />
             </div>
           </button>
         </form>

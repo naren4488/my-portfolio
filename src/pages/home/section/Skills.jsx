@@ -8,6 +8,8 @@ import tailwindlogo from "./../../../assets/narendra/tailwind.svg";
 import gitlogo from "./../../../assets/narendra/git.svg";
 import githublogo from "./../../../assets/narendra/github.svg";
 import jsonlogo from "./../../../assets/narendra/json.svg";
+import restAPILogo from "/assets/icons/rest-api.svg";
+import TechSkillsCard from "../../../components/TechSkillsCard";
 
 const Skills = () => {
   return (
@@ -18,134 +20,26 @@ const Skills = () => {
         </h1>
         {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi qui animi minus nemo dolorem.</p> */}
         {/* skills cols */}
-        <div className="flex justify-between py-8 text-center text-xl  leading-[56px]">
-          <div className=" flex  flex-1 flex-col items-center">
-            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-7">
-              <div className="h-[24px] w-[24px]">
-                <img
-                  src={htmlLOGO}
-                  alt=""
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <p className="max-sm:hidden">HTML</p>
-            </div>
-            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-7">
-              <div className="h-[24px] w-[24px]">
-                <img
-                  src={csslogo}
-                  alt=""
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <p className="max-sm:hidden">CSS</p>
-            </div>
-            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-7">
-              <div className="h-[24px] w-[24px]">
-                <img
-                  src={jslogo}
-                  alt=""
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <p className="max-sm:hidden">JavaScript</p>
-            </div>
-            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-7">
-              <div className="h-[24px] w-[24px]">
-                <img
-                  src={reactlogo}
-                  alt=""
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <p className="max-sm:hidden">React</p>
-            </div>
+
+        <div className="flex justify-evenly  py-8 text-center text-xl leading-[56px] ">
+          <div className=" flex  flex-col    ">
+            <TechSkillsCard logo={htmlLOGO} text={"HTML"} />
+            <TechSkillsCard logo={csslogo} text={"CSS"} />
+            <TechSkillsCard logo={jslogo} text={"JavaScript"} />
+            <TechSkillsCard logo={reactlogo} text={"React"} />
           </div>
-          <div className="border-l  border-gray-600"></div>
-          <div className=" flex  flex-1 flex-col items-center">
-            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-7">
-              <div className="h-[24px] w-[24px]">
-                <img
-                  src={tailwindlogo}
-                  alt=""
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <p className="max-sm:hidden">Tailwind</p>
-            </div>
-            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-7">
-              <div className="h-[24px] w-[24px]">
-                <img
-                  src={materiallogo}
-                  alt=""
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <p className="max-sm:hidden">Material UI</p>
-            </div>
-            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-7">
-              <div className="h-[24px] w-[24px]">
-                <img
-                  src={bootstraplogo}
-                  alt=""
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <p className="max-sm:hidden">Bootstrap</p>
-            </div>
-            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-7">
-              <div className="h-[24px] w-[24px]">
-                <img
-                  src={jsonlogo}
-                  alt=""
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <p className="max-sm:hidden">JSON</p>
-            </div>
+          <div className="sm:border-l  sm:border-gray-600"></div>
+          <div className=" flex  flex-col  ">
+            <TechSkillsCard logo={tailwindlogo} text={"Tailwind"} />
+            <TechSkillsCard logo={materiallogo} text={"Material UI"} />
+            <TechSkillsCard logo={bootstraplogo} text={"Bootstrap"} />
+            <TechSkillsCard logo={jsonlogo} text={"JSON"} />
           </div>
-          <div className="border-l  border-gray-600"></div>
-          <div className=" flex  flex-1 flex-col items-center">
-            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-7">
-              <div className="h-[24px] w-[24px]">
-                <img
-                  src={gitlogo}
-                  alt=""
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <p className="max-sm:hidden">Git</p>
-            </div>
-            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-7">
-              <div className="h-[24px] w-[24px]">
-                <img
-                  src={githublogo}
-                  alt=""
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <p className="max-sm:hidden">Github</p>
-            </div>
-            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-7">
-              <div className="h-[24px] w-[24px]">
-                <img
-                  src={jsonlogo}
-                  alt=""
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <p className="max-sm:hidden">REST APIs</p>
-            </div>
-            <div className="flex w-[134px] items-center gap-3  max-sm:w-fit max-sm:pb-7">
-              <div className="h-[24px] w-[24px]">
-                <img
-                  src={jsonlogo}
-                  alt=""
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <p className="max-sm:hidden">HTTP</p>
-            </div>
+          <div className="sm:border-l  sm:border-gray-600"></div>
+          <div className=" flex  flex-col  ">
+            <TechSkillsCard logo={gitlogo} text={"Git"} />
+            <TechSkillsCard logo={githublogo} text={"GitHub"} />
+            <TechSkillsCard logo={restAPILogo} text={"HTTP & REST APIs"} />
           </div>
         </div>
       </div>

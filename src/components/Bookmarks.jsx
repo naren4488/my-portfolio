@@ -1,19 +1,16 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Link } from "react-scroll";
-import downShavron from "/assets/chevron-down.svg";
+import downShavron from "/assets/icons/cheveron.svg";
 
 const Bookmarks = ({ projectId, name, projectData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentContent, setCurrentContent] = useState(name);
-  // console.log(isOpen);
   const handleClick = () => {
-    // console.log("btn clicked");
     setIsOpen(!isOpen);
   };
 
   const handleSetActive = (to) => {
-    // console.log(to);
     setCurrentContent(to);
   };
   return (
@@ -26,15 +23,15 @@ const Bookmarks = ({ projectId, name, projectData }) => {
       >
         {isOpen ? (
           <div className="flex items-center gap-2 ">
-            <div className="rotate-180 fill-white">
-              <img src={downShavron} alt="" />
+            <div className="rotate-180 fill-white transition-all duration-200">
+              <img src={downShavron} alt="" className="w-[14px]" />
             </div>
             {"Close"}
           </div>
         ) : (
           <div className="flex items-center gap-2 ">
-            <div className="fill-white">
-              <img src={downShavron} alt="" />
+            <div className="fill-white transition-all duration-200">
+              <img src={downShavron} alt="" className="w-[16px]" />
             </div>
             {currentContent}
           </div>

@@ -5,6 +5,7 @@ import ProjectHeader from "./ProjectHeader";
 import { Link } from "react-scroll";
 import EmbedVideo from "../../components/EmbedVideo";
 import Bookmarks from "../../components/Bookmarks";
+import ProjectDetailsImgCard from "../../components/ProjectDetailsImgCard";
 
 const ProjectDetails = () => {
   let { projectId } = useParams();
@@ -97,7 +98,6 @@ const ProjectDetails = () => {
           </div>
         </div>
 
-        {/* <div className="m-auto mt-8 w-1/2 border border-gray-400"></div> */}
         {/* overview card */}
         <div id="overview" className="  mt-20  bg-white p-6 max-sm:px-0">
           <h1 className="mb-1 text-2xl font-normal max-sm:text-xl">
@@ -110,17 +110,14 @@ const ProjectDetails = () => {
             ))}
           </ul>
           <div className="flex gap-10 max-sm:flex-col">
-            {projectData["Overview"]["img"].map((obj, idx) => {
+            {projectData["Overview"]["img"].map((obj) => {
               return (
                 obj.imgURL && (
-                  <div key={idx} className=" w-1/2 max-sm:w-full">
-                    <img
-                      src={obj.imgURL}
-                      alt={obj.imgDisc}
-                      className="  mb-4 h-[290px] object-contain shadow-lg ring-1 ring-slate-200 max-sm:h-[220px]"
-                    />
-                    <p className="text-center max-sm:text-sm">{obj.imgDisc}</p>
-                  </div>
+                  <ProjectDetailsImgCard
+                    key={obj.imgDisc}
+                    imgURL={obj.imgURL}
+                    imgDisc={obj.imgDisc}
+                  />
                 )
               );
             })}

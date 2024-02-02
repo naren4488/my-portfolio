@@ -1,9 +1,10 @@
 import projectIcon from "./../../../assets/logoSVGs/programmer-computer-icon.svg";
-import downloadIcon from "./../../../assets/logoSVGs/import-icon.svg";
+import downloadIcon from "/assets/icons/pdf.svg";
+import heroArrowIcon from "/assets/icons/hero-arrow.svg";
 
 const Hero = () => {
   return (
-    <div className="relative flex h-screen flex-col items-center  justify-center   bg-white text-center   ">
+    <div className="relative flex h-screen flex-col items-center  bg-white   pt-48 text-center  max-sm:pt-32 ">
       <h1 className="px-48 font-inter text-4xl font-bold uppercase leading-[3rem] max-sm:px-6 max-sm:text-base ">
         Hello, I am Narendra. I am a{" "}
         <span className="bg-black px-4 text-white max-sm:px-3">
@@ -14,7 +15,7 @@ const Hero = () => {
         <span className="bg-black px-4 text-white max-sm:px-3">React.js</span>
       </h1>
       <p className="px-52  pt-4 font-inter text-lg max-sm:px-12 max-sm:text-sm ">
-        Graduating from SIT, Tumkur. I focused more on my coding skills to
+        Graduating from SIT Tumkur, I focused more on my coding skills to
         establish a good career in React web development & further. Currently
         working as a freelancer to feed my web crunches.
       </p>
@@ -26,19 +27,15 @@ const Hero = () => {
           <div>View Projects </div>
         </button>
         <button className=" flex w-[200px] items-center justify-center gap-3 border border-black px-3  py-2   font-inter  max-sm:w-[180px]   ">
-          <div className="h-[20px] w-[20px] max-sm:h-[16px] max-sm:w-[16px]">
+          <div className="h-[20px] w-[20px] max-sm:h-[16px] max-sm:w-[16px] ">
             <img src={downloadIcon} className="h-full w-full" alt="" />{" "}
           </div>
           <div>Download Resume</div>
         </button>
       </div>
-      <div className="mt-16 max-sm:mt-28">
+      <div className="sm: absolute bottom-24 mt-32 max-sm:bottom-36 max-sm:mt-28">
         <div className="w-[50px] animate-bounce max-sm:w-[36px]">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF8f3iRMDagr8D6r7jNSHxCK9jtGscdsw6tw&usqp=CAU"
-            alt=""
-            className="w-full"
-          />
+          <img src={heroArrowIcon} alt="" className="w-full" />
         </div>
       </div>
     </div>
