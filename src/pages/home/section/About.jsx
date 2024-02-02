@@ -20,7 +20,7 @@ const About = () => {
           </div>
         </div>
         <div className="relative w-[65%] flex-auto max-sm:w-full">
-          <div className=" pt-10 text-base max-sm:pt-0 max-sm:text-base ">
+          <div className=" pt-10 text-base max-sm:pt-0 max-sm:text-sm ">
             <p className="mb-14 text-justify  max-sm:text-left">
               {`Creating simplistic and functional interfaces on one hand,
               fostering young coders and developers on the other. That’s me in a
