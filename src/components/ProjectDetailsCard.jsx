@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import ProjectDetailsImgCard from "./ProjectDetailsImgCard";
 
-const ProjectDetailsCard = ({ feature, idIndex }) => {
+const ProjectDetailsCard = ({ feature, idIndex, site, github }) => {
   return (
     <div id={idIndex} className={` mt-20  bg-white p-6 max-sm:px-0`}>
       <h1 className="mb-6 text-2xl font-normal max-sm:text-xl">
@@ -35,8 +35,16 @@ const ProjectDetailsCard = ({ feature, idIndex }) => {
       </div>
       {feature["heading"] === "Deployment" && (
         <div className="mt-10 flex gap-8 max-sm:text-base">
-          <p className=" border-b-2 border-black">View Site</p>
-          <p className=" border-b-2 border-black">GitHub Repo</p>
+          <a href={site} target={`_blank`}>
+            <p className=" relative border-b-2 border-gray-400  before:absolute  before:-bottom-[1.8px] before:h-full before:w-0 before:border-b-2 before:border-transparent before:transition-all  before:duration-500 hover:cursor-pointer   before:hover:w-full before:hover:border-black">
+              View Site
+            </p>
+          </a>
+          <a href={github} target={`_blank`}>
+            <p className=" relative border-b-2 border-gray-400  before:absolute  before:-bottom-[1.8px] before:h-full before:w-0 before:border-b-2 before:border-transparent before:transition-all  before:duration-500 hover:cursor-pointer   before:hover:w-full before:hover:border-black">
+              GitHub Repo
+            </p>
+          </a>
         </div>
       )}
     </div>

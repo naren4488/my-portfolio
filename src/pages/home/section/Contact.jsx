@@ -40,7 +40,7 @@ const Contact = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex items-end  justify-between gap-10 max-sm:flex-col max-sm:items-start max-sm:text-sm"
+          className="z-20 flex items-end justify-between gap-10 max-sm:flex-col max-sm:items-start max-sm:text-sm"
         >
           <div className="flex flex-col max-sm:w-full">
             <label id="inputName" className="mb-1" htmlFor="userName">
@@ -86,7 +86,7 @@ const Contact = () => {
           <button
             type="submit"
             required
-            className="m-3 flex shrink-0 items-center gap-4 bg-white px-4 py-2 text-black max-sm:m-0 "
+            className="relative -left-1 -top-1 m-3 flex shrink-0 items-center gap-4   bg-white p-2 px-4 py-2  text-black transition-all before:absolute before:left-1 before:top-1 before:z-10 before:h-full before:w-full before:border before:border-white before:transition-all before:content-[''] hover:left-0 hover:top-0 before:hover:left-0 before:hover:top-0 active:bg-gray-300  max-sm:m-0"
           >
             <div>Send Message</div>
             <div className="">

@@ -1,0 +1,94 @@
+/* #narenbtn {
+  position: relative;
+}
+
+#narenbtn:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 0;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  opacity: 0;
+}
+
+#narenbtn:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  width: 0;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  opacity: 0;
+}
+
+#narenbtn:hover {
+  border: none;
+}
+
+#narenbtn:hover::before {
+  animation: border-top-left 1.5s infinite;
+}
+#narenbtn:hover::after {
+  animation: border-bottom-right 1.5s infinite;
+}
+
+@keyframes border-top-left {
+  0% {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+  }
+  0.1% {
+    height: 0px;
+    width: 0px;
+    opacity: 1;
+  }
+  25% {
+    height: 0px;
+    width: 200px;
+    opacity: 1;
+  }
+  50% {
+    height: 42px;
+    width: 200px;
+    opacity: 1;
+  }
+  100% {
+    height: 42px;
+    width: 200px;
+    opacity: 1;
+  }
+}
+
+@keyframes border-bottom-right {
+  0% {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+  }
+  50% {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+  }
+  50.1% {
+    height: 0px;
+    width: 0px;
+    opacity: 1;
+  }
+  75% {
+    height: 0;
+    width: 200px;
+    opacity: 1;
+  }
+  100% {
+    height: 42px;
+    width: 200px;
+    opacity: 1;
+  }
+} */

@@ -52,11 +52,23 @@ const ProjectCard = ({ projectMetaData, reverse, projectpath }) => {
             </p>
           ))}
         </div>
-        <div className="absolute bottom-8  left-0 right-0  mt-10 flex items-baseline justify-between px-8 max-sm:static max-sm:flex-col max-sm:gap-y-8 max-sm:px-0">
-          <div className="flex gap-8 max-sm:gap-6">
-            <p className=" border-b-2 border-black">View Site</p>
-            <p className=" border-b-2 border-black">GitHub Repo</p>
-            <p className=" border-b-2 border-black">Video Demo</p>
+        <div className="absolute bottom-8 left-0 right-0  mt-10 flex items-baseline justify-between px-8 max-sm:static max-sm:flex-col max-sm:gap-y-8 max-sm:px-0">
+          <div className="z-20 flex gap-8 max-sm:gap-6">
+            <a href={site} target={`_blank`}>
+              <p className=" relative border-b-2 border-gray-400  before:absolute  before:-bottom-[1.8px] before:h-full before:w-0 before:border-b-2 before:border-transparent before:transition-all  before:duration-500 hover:cursor-pointer   before:hover:w-full before:hover:border-black">
+                View Site
+              </p>
+            </a>
+            <a href={github} target={`_blank`}>
+              <p className="  relative border-b-2 border-gray-400  before:absolute  before:-bottom-[1.8px] before:h-full before:w-0 before:border-b-2 before:border-transparent before:transition-all  before:duration-500 hover:cursor-pointer   before:hover:w-full before:hover:border-black">
+                GitHub Repo
+              </p>
+            </a>
+            <a href={videoDemo} target={`_blank`}>
+              <p className="  relative border-b-2 border-gray-400  before:absolute  before:-bottom-[1.8px] before:h-full before:w-0 before:border-b-2 before:border-transparent before:transition-all  before:duration-500 hover:cursor-pointer   before:hover:w-full before:hover:border-black">
+                Video Demo
+              </p>
+            </a>
           </div>
           <HashLink
             className=""
@@ -68,10 +80,15 @@ const ProjectCard = ({ projectMetaData, reverse, projectpath }) => {
               window.scrollTo({ top: y, behavior: "auto" });
             }}
           >
-            <div className=" flex items-center border-b-2 border-black">
+            <div className="group relative box-border flex  items-center border-b-2 border-gray-400  before:absolute  before:-bottom-[1.8px] before:h-full before:w-0 before:border-b-2 before:border-transparent before:transition-all  before:duration-500 hover:cursor-pointer   before:hover:w-full before:hover:border-black ">
               Read More
               <div className="h-[20px] w-[20px]   max-sm:h-[] max-sm:w-[]">
-                <img src={readMoreArrow} alt="" className="w-full" />
+                <img
+                  loading="lazy"
+                  src={readMoreArrow}
+                  alt=""
+                  className="w-full"
+                />
               </div>
             </div>
           </HashLink>
@@ -88,6 +105,7 @@ const ProjectCard = ({ projectMetaData, reverse, projectpath }) => {
             >
               <img
                 src={mockupImg}
+                loading="lazy"
                 onClick={() => handleZoom()}
                 alt="mockup-img"
                 className={`h-full w-full  object-contain transition-all duration-200   ${isZoomed ? "sm:cursor-zoom-out " : "sm:cursor-zoom-in sm:hover:brightness-75"}`}

@@ -2,6 +2,7 @@ import narendraImg from "./../../../assets/logoSVGs/narendra.jpeg";
 import linkedInIcon from "./../../../assets/logoSVGs/linkedin-square-icon.svg";
 import gitHubIcon from "./../../../assets/logoSVGs/github-icon.svg";
 import mailIcon from "/assets/icons/mail.svg";
+import { HashLink } from "react-router-hash-link";
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
           <div className=" h-[450px] overflow-hidden max-sm:h-[380px] ">
             <img
               src={narendraImg}
+              loading="lazy"
               alt="narendra image"
               className="relative top-8 h-full w-full scale-[1.15] object-cover"
             />
@@ -39,21 +41,31 @@ const About = () => {
             </p>
             <div className="absolute bottom-4 right-0 flex  items-center justify-end gap-10 max-sm:static max-sm:gap-6">
               <p className=" ">Connect Here -</p>
-              <img
-                src={linkedInIcon}
-                alt=""
-                className="h-[24px] w-[24px] max-sm:h-[20px] max-sm:w-[20px]"
-              />
-              <img
-                src={mailIcon}
-                alt=""
-                className="h-[24px] w-[24px] max-sm:h-[20px] max-sm:w-[20px]"
-              />
-              <img
-                src={gitHubIcon}
-                alt=""
-                className="h-[24px] w-[24px] max-sm:h-[20px] max-sm:w-[20px]"
-              />
+
+              <a
+                href="https://www.linkedin.com/in/narendrakajla77/"
+                target={`_blank`}
+              >
+                <img
+                  src={linkedInIcon}
+                  alt=""
+                  className="h-[24px] w-[24px] max-sm:h-[20px] max-sm:w-[20px]"
+                />
+              </a>
+              <a href="mailto:narendrakajla77@gmail.com" target={`_blank`}>
+                <img
+                  src={mailIcon}
+                  alt=""
+                  className="h-[24px] w-[24px] max-sm:h-[20px] max-sm:w-[20px]"
+                />
+              </a>
+              <a href="https://github.com/naren4488" target={`_blank`}>
+                <img
+                  src={gitHubIcon}
+                  alt=""
+                  className="h-[24px] w-[24px] max-sm:h-[20px] max-sm:w-[20px]"
+                />
+              </a>
             </div>
           </div>
         </div>

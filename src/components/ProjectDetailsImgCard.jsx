@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 const ProjectDetailsImgCard = ({ imgDisc, imgURL }) => {
   const [isZoomed, setIsZoomed] = useState(false);
-  console.log(isZoomed);
+  // console.log(isZoomed);
   useEffect(() => {
     if (window.innerWidth > 640) {
       if (isZoomed) document.body.style.overflow = "hidden";
@@ -28,6 +28,7 @@ const ProjectDetailsImgCard = ({ imgDisc, imgURL }) => {
         >
           <img
             src={imgURL}
+            loading="lazy"
             alt={imgDisc}
             className={` object-contain  ring-slate-200   ${isZoomed ? "h-[85%] w-[85%] ring-0" : " h-full w-full shadow-lg ring-1"}`}
           />

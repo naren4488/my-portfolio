@@ -15,7 +15,7 @@ const Bookmarks = ({ projectId, name, projectData }) => {
   };
   return (
     <div
-      className={`fixed right-0  z-10 flex h-[1500px] w-full flex-col items-end border-2 sm:hidden ${isOpen ? "bg-gray-400 bg-opacity-10 backdrop-blur-[2px] backdrop-filter" : ""}`}
+      className={`fixed right-0  z-10 flex  w-full flex-col items-end  sm:hidden ${isOpen ? "h-[1500px] bg-gray-400 bg-opacity-10 backdrop-blur-[2px] backdrop-filter" : "h-fit w-fit"}`}
     >
       <button
         className="mb-2 mt-16 h-fit min-w-[140px] rounded-l-full bg-black p-3 text-sm text-white shadow-lg"

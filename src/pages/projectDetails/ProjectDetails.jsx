@@ -10,9 +10,19 @@ import ProjectDetailsImgCard from "../../components/ProjectDetailsImgCard";
 const ProjectDetails = () => {
   let { projectId } = useParams();
 
-  const { name, site, github, videoDemo, discription, secondDiscription } =
-    projectDataJSON[projectId].projectMetaData;
+  const {
+    name,
+    site,
+    github,
+    videoDemo,
+
+    videoId,
+    discription,
+    secondDiscription,
+  } = projectDataJSON[projectId].projectMetaData;
   const { projectData } = projectDataJSON[projectId];
+
+  console.log(videoId);
 
   return (
     <div
@@ -87,13 +97,22 @@ const ProjectDetails = () => {
               {secondDiscription && <p className="mt-2">{secondDiscription}</p>}
 
               <div className=" bottom-4  left-0 right-0 mt-10 flex gap-8 max-sm:text-base">
-                <p className=" border-b-2 border-black">View Site</p>
-                <p className=" border-b-2 border-black">GitHub Repo</p>
+                <a href={site} target={`_blank`}>
+                  <p className=" relative border-b-2 border-gray-400  before:absolute  before:-bottom-[1.8px] before:h-full before:w-0 before:border-b-2 before:border-transparent before:transition-all  before:duration-500 hover:cursor-pointer   before:hover:w-full before:hover:border-black">
+                    View Site
+                  </p>
+                </a>
+
+                <a href={github} target={`_blank`}>
+                  <p className=" relative border-b-2 border-gray-400  before:absolute  before:-bottom-[1.8px] before:h-full before:w-0 before:border-b-2 before:border-transparent before:transition-all  before:duration-500 hover:cursor-pointer   before:hover:w-full before:hover:border-black">
+                    GitHub Repo
+                  </p>
+                </a>
               </div>
             </div>
 
             <div className="flex-1 pl-4 max-sm:p-0">
-              <EmbedVideo videoID={"t1QBSRRhwX8"} />
+              <EmbedVideo videoID={videoId} />
             </div>
           </div>
         </div>
@@ -132,6 +151,8 @@ const ProjectDetails = () => {
               key={feature["heading"]}
               idIndex={myID}
               feature={feature}
+              site={site}
+              github={github}
             />
           );
         })}
