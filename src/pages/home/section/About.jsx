@@ -1,8 +1,8 @@
-import narendraImg from "./../../../assets/logoSVGs/narendra.jpeg";
+import narendraImg from "/assets/narendraProfile.jpg";
 import linkedInIcon from "./../../../assets/logoSVGs/linkedin-square-icon.svg";
 import gitHubIcon from "./../../../assets/logoSVGs/github-icon.svg";
 import mailIcon from "/assets/icons/mail.svg";
-import { HashLink } from "react-router-hash-link";
+// import { HashLink } from "react-router-hash-link";
 
 const About = () => {
   return (

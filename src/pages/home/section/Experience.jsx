@@ -13,7 +13,7 @@ const Experience = () => {
             id="1"
             title="4U Academy"
             role="Web developer & Tutor"
-            duration="Dec,2021 - present"
+            duration="Dec, 2021 - Jan, 2024"
             answer={[
               "Lead the team of 5 including web-designer, intern & tutors.",
               "Mentored 100+ students at 4U Academy.",
@@ -25,10 +25,10 @@ const Experience = () => {
             id="2"
             title="Urban Biotix"
             role="Web developer & Co-founder"
-            duration="Aug,2022 - Dec,2022"
+            duration="Oct, 2021 - Dec, 2022"
             answer={[
-              "Initiated the Go-Green slogan to be a reality in Jaipur urban areas. Raised 7 lac funding with co-founders at JECRC Inclubation Center form state government.",
-              "30+ successfull rooftop garden projects throughout the span of 4 months",
+              "Initiated the Go-Green slogan to be a reality in Jaipur urban areas. Raised 7 lac funding with co-founders at JECRC Incubation Center form state government.",
+              "30+ successful rooftop garden projects throughout the span of 15 months",
             ]}
           />
           <Accordion
