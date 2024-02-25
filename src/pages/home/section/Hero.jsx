@@ -31,7 +31,7 @@ const Hero = () => {
           </button>
         </HashLink>
 
-        <a download href="/assets/resume/narendra.resume.pdf">
+        <a download href="/assets/resume/resume.narendra.pdf">
           <button className="relative -left-1 -top-1 flex w-[200px] items-center justify-center gap-3     border    border-black bg-white p-2 px-3 py-2 font-inter  text-black transition-all before:absolute before:left-1 before:top-1 before:-z-10 before:h-full before:w-full before:border before:border-black before:transition-all before:content-[''] hover:left-0 hover:top-0 before:hover:left-0 before:hover:top-0 active:bg-gray-300  max-sm:w-[180px]">
             <div className="h-[20px] w-[20px] max-sm:h-[16px] max-sm:w-[16px] ">
               <img src={downloadIcon} className="h-full w-full" alt="" />{" "}
