@@ -7,7 +7,7 @@
       "name": "QTrip",
       "projectTime": "Aug, 2023",
       "discription": "This project is a part of Crio Fellowship Program in Software Development aimed towards enabling the graduatee to become a skilled & certified full stack engineer. ",
-      "secondDiscription": "Qtrip is 2nd out of 3 capstone projects assigned from 'Crio' in order to receive certification in 'Fellowship Program in Software Development'.",
+      "secondDiscription": "Qtrip is second out of 3 capstone projects assigned from 'Crio' in order to receive certification in 'Fellowship Program in Software Development'.",
       "techStack": ["HTML", "CSS", "JavaScript", "REST APIs"],
       "site": "https://qtrip-dynamic-naren4488.netlify.app/",
       "github": "https://github.com/naren4488/narendrakajla77-ME_QTRIPDYNAMIC",
@@ -148,14 +148,14 @@
       "name": "QKart",
       "projectTime": "Sep, 2023",
       "discription": "This project is a part of Crio Fellowship Program in Software Development aimed towards enabling the graduatee to become a skilled & certified full stack engineer.",
-      "secondDiscription": "Qkart is 1st out of 3 capstone projects assigned from 'Crio' in order to receive certification in 'Fellowship Program in Software Development'.",
+      "secondDiscription": "Qkart is first out of 3 capstone projects assigned from 'Crio' in order to receive certification in 'Fellowship Program in Software Development'.",
       "techStack": ["React", "Material UI", "HTTP", "REST APIs", "Git"],
       "site": "https://naren4488-qkart-frontend.netlify.app/",
       "github": "https://github.com/naren4488/narendrakajla77-ME_QKART_FRONTEND_V2",
       "videoDemo": "https://youtu.be/ol7tag89m9w",
       "videoId": "ol7tag89m9w",
       "projectInfo": "As a learner in Crio, I implemented React reusable components for registration, authentication, cart & checkout and conditional rendering of cart items.",
-      "secondProjectInfo": "This is an E-commerce application designed and develop to cater the need of customer by offering a variety of products where all the products data is fetched dynamically via REST APIs from backend"
+      "secondProjectInfo": "This is an E-commerce application designed and developed to cater the need of customer by offering a variety of products where all the products data is fetched dynamically via REST APIs from backend."
     },
     "projectData": {
       "Overview": {
